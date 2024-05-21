@@ -14,85 +14,316 @@
             line-height: 1.75em;
             text-align: left;
             background-color: #fffbf7;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
             padding: 24px;
         }
 
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 4em;
+            line-height: 1em;
+        }
+
+        h3 {
+            margin-top: 0px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 2em;
+        }
+
+        a {
+            color: rgb(113, 44, 53);
+            text-decoration-line: none;
+        }
+
+        a:hover {
+            text-decoration-line: underline;
+        }
+
+        hr {
+            height: 1px;
+            background-color: #c3c3c3;
+            border-width: 0;
+            width: 100%;
+        }
+
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        img+p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .landing {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.645)), url(images/MinskAerialView.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 80px;
+        }
+
         .container {
-            color: black;
+            padding: 24px;
+            max-width: 1300px;
+            width: 100%;
         }
 
         .attraction {
             color: black;
+            display: flex;
+            padding: 16px;
         }
 
-        img {
-            border-radius: 6px;
-            max-width: 50%;
+        .left-attraction-section {
+            width: 50%;
+            padding-right: 16px;
+        }
+
+        .right-attraction-section {
+            width: 50%;
+            padding-left: 16px;
+        }
+
+        .about-minsk-content {
+            padding-bottom: 24px;
+        }
+
+        .button-link {
+            background-color: rgb(158, 63, 74);
+            display: inline-block;
+            padding: 8px;
+            border-style: solid;
+            border-radius: 8px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-decoration-line: none;
+        }
+
+        .button-link:hover {
+            color: black;
+            border-color: rgb(255, 228, 231);
+            border-width: 4px;
+            border-radius: 10px;
+            background-color: rgb(226, 155, 164);
+            text-decoration-line: none;
+        }
+
+        .light-button-link {
+            display: inline-block;
+            margin: 32px 0 32px 0;
+            padding: 8px;
+            border-style: solid;
+            border-radius: 8px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-decoration-line: none;
+        }
+
+        .light-button-link:hover {
+            color: black;
+            border-color: rgb(255, 202, 208);
+            border-width: 2px;
+            background-color: rgb(255, 254, 255);
+            text-decoration-line: none;
+        }
+
+        #split-content {
+            display: flex;
+            padding-bottom: 32px;
+        }
+
+        #left-content {
+            width: 40%;
+            padding-right: 32px;
+        }
+
+        #right-content {
+            width: 60%;
+            background-color: #e3e3e3;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        #small-text {
+            font-size: 0.9em;
+        }
+
+        .floating-image {
+            float: right;
+            margin: 0 0 10px 10px;
+            max-width: 40%;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 5px;
+            color: #555;
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="landing">
         <h1>Minsk, Belarus</h1>
     </header>
     <main>
         <div class="container">
-            <section>
-                <h2>Welcome to Minsk</h2>
-                <p>Minsk, the capital city of Belarus, offers a unique blend of history, culture, and modernity. It's a
-                    city that attracts visitors with its stunning architecture, vibrant arts scene, and rich history.
-                    Whether you're interested in exploring historical sites, enjoying local cuisine, or experiencing the
-                    lively nightlife, Minsk has something for everyone.</p>
-            </section>
-            <section>
-                <h2>Top Attractions</h2>
-                <div class="attraction">
-                    <h3>Independence Square</h3>
-                    <img src="images/MinskIndependenceSquare.jpg" alt="Independence Square in Minsk">
-                    <p>Independence Square is one of the largest squares in Europe. It features the iconic Independence
-                        Palace and the Church of Saints Simon and Helena. <a
-                            href="https://unsplash.com/photos/brown-and-white-concrete-building-under-blue-sky-during-daytime-2b9PU1g_UYM">Learn
-                            more</a></p>
+            <div id="split-content">
+                <div id="left-content">
+                    <section class="about-minsk-content">
+                        <h2>Welcome to Minsk</h2>
+                        <figure class="floating-image">
+                            <img src="images/MinskBuilding.JPG" alt="A glass building with a stormy sky">
+                            <figcaption><cite>Minsk Building</cite> by David Ankuda.</figcaption>
+                        </figure>
+                        <p>Minsk, the capital city of Belarus, offers a unique blend of history, culture, and modernity.
+                        It's a
+                        city that attracts visitors with its stunning architecture, vibrant arts scene, and rich
+                        history.
+                        Whether you're interested in exploring historical sites, enjoying local cuisine, or
+                        experiencing the
+                        lively nightlife, Minsk has something for everyone.
+                    </p>
+                    </section>
+                    <hr>
+                    <section class="about-minsk-content">
+                        <h2>Interesting Facts</h2>
+                        <ul>
+                            <li>Population: Approximately 1.9 million</li>
+                            <li>Geography: Located on the Svislach rivers, center of Belarus</li>
+                            <li>Weather: Humid continental climate with cold winters and warm summers</li>
+                            <li>Language: Belarusian and Russian</li>
+                        </ul>
+                        <hr>
+                        <br>
+                        <a href="https://en.wikipedia.org/wiki/Minsk" class="button-link" target="_blank">Learn More
+                            &rarr;</a>
+                    </section>
                 </div>
-                <div class="attraction">
-                    <h3>National Library of Belarus</h3>
-                    <img src="images/MinskNationalLibrary.jpg" alt="National Library of Belarus in Minsk">
-                    <p>The National Library of Belarus is an architectural marvel and a treasure trove of knowledge. Its
-                        unique diamond-shaped design houses millions of books and offers panoramic views of the city
-                        from its observation deck. <a
-                            href="https://unsplash.com/photos/an-aerial-view-of-a-building-surrounded-by-snow-KLcAbPJ_cgY">Learn
-                            more</a></p>
+                <div id="right-content">
+                    <section>
+                        <h2>Top Attractions</h2>
+                        <hr>
+                        <div class="attraction">
+                            <div class="left-attraction-section">
+                                <h3>Independence Square</h3>
+                                <p>Independence Square is one of the largest squares in Europe. It features the iconic
+                                    Independence
+                                    Palace and the Church of Saints Simon and Helena.</p>
+                            </div>
+                            <div class="right-attraction-section">
+                                <img src="images/MinskIndependenceSquare.jpg" alt="Independence Square in Minsk">
+                                <p><cite>Minsk Independence Square</cite> by <a
+                                        href="https://unsplash.com/photos/brown-and-white-concrete-building-under-blue-sky-during-daytime-2b9PU1g_UYM"
+                                        target="_blank">Unsplash</a>.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="attraction">
+                            <div class="left-attraction-section">
+                                <h3>Belarusian State Museum of the History of the Great Patriotic War</h3>
+                                <p>This museum offers a comprehensive look at Belarus's role in World War II, with
+                                    numerous
+                                    exhibits
+                                    and artifacts.</p>
+                            </div>
+                            <div class="right-attraction-section">
+                                <img src="images/MinskWorldWar2Museum.jpg"
+                                    alt="Belarusian State Museum of the History of the Great Patriotic War in Minsk">
+                                <p><cite>Minsk WW2 History Museum</cite> by <a
+                                        href="https://www.pexels.com/photo/the-belarusian-great-patriotic-war-museum-in-minsk-13086781/"
+                                        target="_blank">Pexels</a>.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="attraction">
+                            <div class="left-attraction-section">
+                                <h3>National Library of Belarus</h3>
+                                <p>The National Library of Belarus is an architectural marvel and a treasure trove of
+                                    knowledge. Its
+                                    unique diamond-shaped design houses millions of books and offers panoramic views of
+                                    the
+                                    city
+                                    from its observation deck.</p>
+                            </div>
+                            <div class="right-attraction-section">
+                                <img src="images/MinskNationalLibrary.jpg" alt="National Library of Belarus in Minsk">
+                                <p><cite>Minsk National Library</cite> by <a
+                                        href="https://unsplash.com/photos/an-aerial-view-of-a-building-surrounded-by-snow-KLcAbPJ_cgY"
+                                        target="_blank">Unsplash</a>.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="attraction">
+                            <div class="left-attraction-section">
+                                <h3>National Opera and Ballet Theatre</h3>
+                                <p>The National Opera and Ballet Theatre is a must-visit for art lovers. It hosts a
+                                    variety
+                                    of performances ranging from classical operas to contemporary ballets.</p>
+                            </div>
+                            <div class="right-attraction-section">
+                                <img src="images/MinskTheatre.jpg" alt="National Opera and Ballet Theatre in Minsk">
+                                <p><cite>Minsk Bolshoi Theatre</cite> by <a
+                                        href="https://www.pexels.com/photo/national-academic-bolshoi-opera-and-ballet-theatre-in-minsk-16120551/"
+                                        target="_blank">Pexels</a>.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="attraction">
-                    <h3>National Opera and Ballet Theatre</h3>
-                    <img src="images/national_opera.jpg" alt="National Opera and Ballet Theatre in Minsk">
-                    <p>The National Opera and Ballet Theatre is a must-visit for art lovers. It hosts a variety of performances ranging from classical operas to contemporary ballets. <a href="https://example.com/national_opera">Learn more</a></p>
-                </div>
-                <div class="attraction">
-                    <h3>Belarusian State Museum of the History of the Great Patriotic War</h3>
-                    <img src="images/museum.jpg"
-                        alt="Belarusian State Museum of the History of the Great Patriotic War in Minsk">
-                    <p>This museum offers a comprehensive look at Belarus's role in World War II, with numerous exhibits
-                        and artifacts. <a href="https://example.com/museum">Learn more</a></p>
-                </div>
-            </section>
-            <section>
-                <h2>Interesting Facts</h2>
-                <ul>
-                    <li>Population: Approximately 2 million</li>
-                    <li>Geography: Located on the Svislach and Niamiha rivers</li>
-                    <li>Weather: Humid continental climate with cold winters and warm summers</li>
-                    <li>Language: Belarusian and Russian</li>
-                </ul>
-            </section>
+            </div>
+            <hr>
         </div>
     </main>
     <footer>
-        <p>Sources: <a href="https://example.com/imagesource1">Independence Square Image</a>, <a
-                href="https://example.com/imagesource2">National Opera Image</a>, <a
-                href="https://example.com/imagesource3">Victory Park Image</a>, <a
-                href="https://example.com/imagesource4">Museum Image</a></p>
+        <div class="container">
+            <h2>Resources</h2>
+            <p>Images used:</p>
+            <ul>
+                <li>Egor Kunovsky, aerial view of city buildings during daytime, 2020, <a
+                        href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-NxFNWUMxnGM"
+                        target="_blank">Unsplash.com</a>, Accessed May 20, 2024</li>
+                <li>Osman Yunus Bekcan. brown and white concrete building under blue sky during daytime, 2020, <a
+                        href="https://unsplash.com/photos/brown-and-white-concrete-building-under-blue-sky-during-daytime-2b9PU1g_UYM"
+                        target="_blank">Unsplash.com</a>, Accessed 20 May, 2024</li>
+                <li>Sarazh Izmailov, The Belarusian Great Patriotic War Museum in Minsk, 2022, <a
+                        href="https://www.pexels.com/photo/the-belarusian-great-patriotic-war-museum-in-minsk-13086781/"
+                        target="_blank">Pexels.com</a>, Accessed May 20, 2024</li>
+                <li>Eugene Krasnaok, National Library of Belarus, Minsk. Contemporary architecture in Eastern Europe.,
+                    2021, <a
+                        href="https://unsplash.com/photos/an-aerial-view-of-a-building-surrounded-by-snow-KLcAbPJ_cgY"
+                        target="_blank">Unsplash.com</a>, Accessed May 20, 2024</li>
+                <li>Vitali Adutskevich, National Academic Bolshoi Opera and Ballet Theatre in Minsk, 2022, <a
+                        href="https://www.pexels.com/photo/national-academic-bolshoi-opera-and-ballet-theatre-in-minsk-16120551/"
+                        target="_blank">Pexels.com</a>, Accessed May 20, 2024</li>
+                <li>Ankuda, David, Minsk Building, 2018. JPEG File.</li>
+            </ul>
+            <a class="light-button-link" href="#">Back to top &uarr;</a>
+            <hr>
+            <p id="small-text">&copy; 2024 by David Ankuda for BATECH 189</p>
+        </div>
     </footer>
 </body>
 
